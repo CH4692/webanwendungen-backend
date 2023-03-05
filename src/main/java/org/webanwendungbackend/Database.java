@@ -9,9 +9,9 @@ import java.util.List;
 
 public class Database {
 
-    ObjectMapper objectMapper = new ObjectMapper();
-    Resource mealsDB = new ClassPathResource("MealsDB.json");
-    Resource usersDB = new ClassPathResource("UsersDB.json");
+    private ObjectMapper objectMapper = new ObjectMapper();
+    private Resource mealsDB = new ClassPathResource("MealsDB.json");
+    private Resource usersDB = new ClassPathResource("UsersDB.json");
 
 
         public boolean createUser(User user) {
@@ -75,6 +75,7 @@ public class Database {
             e.printStackTrace();
         }
         return success;
+
     }
 
     public User createOrder(Order order, String username) {

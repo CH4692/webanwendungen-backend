@@ -7,7 +7,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Response {
-    boolean success;
-    String message;
+public class OrderItems {
+    private String id;
+    private String name;
+    private String amount;
+    private String price;
 }
